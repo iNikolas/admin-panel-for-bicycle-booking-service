@@ -4,7 +4,7 @@
 
 By means of this application you can manage bicycle accounting for your bicycle booking services.
 
-You can test id deployed by [the next link](http://iNikolas.github.io/admin-panel-for-bicycle-booking-service).
+You can test deployed application by [the next link](http://iNikolas.github.io/admin-panel-for-bicycle-booking-service).
 
 #### You can add bicycles with the next fields:
 

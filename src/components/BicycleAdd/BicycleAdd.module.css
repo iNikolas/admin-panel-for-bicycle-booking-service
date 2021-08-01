@@ -1,0 +1,25 @@
+.buttons-wrapper {
+    display: inline-block;
+    width: 47%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.buttons-wrapper button {
+    display: block;
+    background-color: #696969;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    min-height: 30px;
+}
+
+.buttons-wrapper button:disabled {
+    background-color: #E8E8E8;
+}
+
+.buttons-wrapper button:active {
+    background-color: #6FCF97;
+}

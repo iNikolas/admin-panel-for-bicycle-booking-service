@@ -1,0 +1,41 @@
+.input-wrapper {
+    display: inline-block;
+    width: 47%;
+    padding-right: 3%;
+    padding-top: 3%;
+    vertical-align: top;
+}
+
+.input-wrapper input, .input-wrapper textarea {
+    display: block;
+    border-radius: 5px;
+    background-color: #E8E8E8;
+    color: #717171;
+    border: none;
+    width: 95%;
+    min-height: 1.75em;
+    padding-left: 5%;
+    font-size: medium;
+}
+
+.input-wrapper textarea {
+    padding-top: 5%;
+    resize: vertical;
+    min-height: 60px;
+    max-height: 300px;
+    font-size: large;
+}
+
+.input-wrapper input:focus, .input-wrapper textarea:focus {
+    outline: none
+}
+
+.input-error {
+    border: 2px solid firebrick;
+}
+
+.input-wrapper span{
+    font-size: small;
+    font-weight: bold;
+    color: firebrick;
+}

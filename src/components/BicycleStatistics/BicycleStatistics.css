@@ -1,0 +1,19 @@
+.statistics-header-text {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.emphasized-text, .regular-text {
+    font-size: medium;
+    margin-top: 0.75em;
+}
+
+.regular-text {
+
+}
+
+.emphasized-text {
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: x-large;
+}

@@ -1,0 +1,55 @@
+.form-wrapper {
+    padding: 1%;
+    margin: 2%;
+    border-radius: 10px;
+    border: 3px solid #6FCF97;
+    font-size: medium;
+    background-color: #E8E8E8;
+    font-family: 'Open Sans', Lato, sans-serif;
+}
+
+.form-wrapper, .row-div button, .row-div select {
+    background-color: #E8E8E8;
+}
+
+.row-div button, .row-div select {
+    border: none;
+}
+
+.row-div button:hover {
+    cursor: pointer;
+}
+
+.row-div select {
+    margin-left: 0.5em;
+    outline: none;
+    text-align-last: right;
+
+}
+
+.semi-header-text {
+    font-weight: bolder;
+}
+
+.small-text {
+    color: #717171;
+    font-size: x-small;
+    margin-top: 1em;
+}
+
+.price-text {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.row-div {
+    display: flex;
+    padding: 0.1em;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.row-div button {
+    display: block;
+    font-weight: bolder;
+}

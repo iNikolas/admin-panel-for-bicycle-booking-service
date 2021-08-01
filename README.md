@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+#ADMIN-PANEL FOR A BICYCLE BOOKING APPLICATION (FRONT-END)
+
+##Description
+
+![GitHub Logo](public/bike-booking.jpg)
+
+By means of this application you can manage bicycle accounting for your bicycle booking services.
+
+You can test id deployed by [the next link](http://iNikolas.github.io/admin-panel-for-bicycle-booking-service).
+
+####You can add bicycles with the next fields:
+
+* bicycle name;
+* bicycle type;
+* color of the bicycle;
+* bicycle price (by default in UAH);
+* bicycle unique id;
+* short description of the bicycle.
+
+####The bicycle data can only be submitted after all form inputs have valid content, namely:
+
+* all aforementioned fields are required;
+* minimum string length for name, type, color and description inputs is 5 characters;
+* bicycle id  should be unique and don’t coincide with already added bicycles to the list;
+* if the price value has more than two symbols after the comma - it will be automatically truncated for a proper price representation.
+
+All bicycles you have added will be displayed at the main application panel at the left side of its window with provided data. 
+
+####By means of the main panel you can use the next application features as:
+
+* change bicycle status (available, busy, unavailable);
+* remove bicycle from the list (be careful with it, you can’t retrieve deleted data).
+
+####In addition admin-panel possesses simple statistic features, calculating for you the next data:
+
+* total amount of bikes;
+* available and booked bikes respectively;
+* average bike cost.
+
+##Installation
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##Usage
 
-### Code Splitting
+####Form validation
+For the form validation have been chosen react-final-form state management which is considered one of the better solutions in this field. To modify or add validators check /src/components/Fields/validators directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+You can add composed validators directly to each Field component in the /src/components/BicycleAdd/BicycleAdd.jsx file in validate attribute.
 
-### Analyzing the Bundle Size
+####Modification some UI elements
+To modify header name simply provide a new “headerText” prop attribute for the Header component in the App.js.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To modify author name do almost the same: provide a new “developerName” prop attribute for the Footer component in the App.js.
 
-### Making a Progressive Web App
+####Data storage and embedding backend API
+By default the application stores data locally by means of the localForage library. It can be accessible after browser restart or OS reload. But this storage is bound to the origin (domain/protocol/port triplet). That is, different protocols or subdomains infer different storage objects, they can’t access data from each other. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To embed a proper backed solution just modify API methods in the /src/API/localForage.js file. 

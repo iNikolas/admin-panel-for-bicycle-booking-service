@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/admin-panel-for-bicycle-booking-service/static/css/main.556976e7.chunk.css",
-    "main.js": "/admin-panel-for-bicycle-booking-service/static/js/main.6233f19a.chunk.js",
-    "main.js.map": "/admin-panel-for-bicycle-booking-service/static/js/main.6233f19a.chunk.js.map",
+    "main.js": "/admin-panel-for-bicycle-booking-service/static/js/main.77751b92.chunk.js",
+    "main.js.map": "/admin-panel-for-bicycle-booking-service/static/js/main.77751b92.chunk.js.map",
     "runtime-main.js": "/admin-panel-for-bicycle-booking-service/static/js/runtime-main.e13342e9.js",
     "runtime-main.js.map": "/admin-panel-for-bicycle-booking-service/static/js/runtime-main.e13342e9.js.map",
     "static/js/2.46a26a29.chunk.js": "/admin-panel-for-bicycle-booking-service/static/js/2.46a26a29.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e13342e9.js",
     "static/js/2.46a26a29.chunk.js",
     "static/css/main.556976e7.chunk.css",
-    "static/js/main.6233f19a.chunk.js"
+    "static/js/main.77751b92.chunk.js"
   ]
 }
